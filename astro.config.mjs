@@ -18,3 +18,12 @@ export default defineConfig({
     },
   },
 });
+// 情侣配置信息 - 请修改为你们的
+const LOVE_CONFIG = {
+  boy: '小徐',
+  girl: '小占',
+  loveDate: '2026-08-20'
+};
+
+// 将配置注入到 Astro 的全局变量中
+process.env.LOVE_CONFIG = JSON.stringify(LOVE_CONFIG);
